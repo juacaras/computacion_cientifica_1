@@ -1,0 +1,40 @@
+ejercicio 1
+n=input( "ingrese su nombre" )                               #Ejercicio 1
+print("Hola, "+n+".  ¡Bienvenido/a a la programación en Python!")
+ejercicio 2
+n= int( input("ingrese un numero"))
+if n%2==0:
+    print("el numero "+str(n)+" es par")
+else:
+    print("el numero "+str(n)+" es impar")
+ejercicio 3
+n= input("ingrese una palabra")
+k= n.lower()
+list=[]
+for i in range(0,len(k)):
+    if k[i]=="a" or k[i]=="e" or k[i]=="i" or k[i]=="o" or k[i]=="u":
+        list.append(k[i])
+    else:
+        pass
+print("la palabra "+n+" tiene "+str(len(list))+" vocales")
+ejericio 4
+import random
+n= random.randint(1,10)
+print("adivina el numero entre 1 y 10:")
+m=int( input("Adivina el  numero "))
+while n!=m:
+    if m>n:
+        print("El numero es menor")
+    else:
+        print("El numero es mayor")
+    m=int( input("sigue adivinando"))
+print("Adivinaste el numero")
+ejercicio 5
+n= int(input( "escriba su numero"))
+
+for i in range (1,11):
+    print(f"{n}x{i}= {n*i}")
+ejercicio 6
+n= int(input("ingrese un numero"))
+for i in range (1,n+1):
+    print(" "*(2*n-i)+"*"*(2*i-1))
